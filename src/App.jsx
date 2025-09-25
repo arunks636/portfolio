@@ -56,7 +56,7 @@ function App() {
       {loading ? (
         <Preloader setLoading={setLoading} />
       ) : (
-        <div className={`dark:bg-dark bg-white min-h-screen`}>
+        <div className={`dark:bg-dark bg-white min-h-screen progress`}>
           <CustomPointer cursorVariant={cursorVariant} />
 
           <Navigation
