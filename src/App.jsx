@@ -41,7 +41,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [cursorVariant, setCursorVariant] = useState("default");
 
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     if (darkMode) {
