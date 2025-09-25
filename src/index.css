@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --skill-height: 8px;
+}
+
+@theme {
+    --font-display: 'Saira', sans-serif;
+    --font-bungee: "Bungee", sans-serif;
+    --color-dark: #080808;
+    --color-white: #ffffff;
+    --color-offwhite: #b7ab98;
+    --color-theme-yellow: #fff312;
+}
+
+
+
+html {
+	scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
+}
+
+.wrapper .hero-text-mask{
+    cursor: default;
+  
+    position: absolute;
+    color: #131313;
+}
+
+.wrapper .inner-wrapper{
+    width: 100%;
+    margin: auto;
+}
+
+.skills{
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+}
+
+.skill-name{
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.skill-bar{
+  height: var(--skill-height);
+  background: #444;
+  border-radius: 3px;
+}
+
+.skill-per{
+  height: var(--skill-height);
+  background: #57C785;
+  background: linear-gradient(90deg,rgba(87, 199, 133, 1) 50%, rgba(255, 243, 18, 1) 100%);
+  border-radius: 3px;
+  position: relative;
+  animation: fillBars 3.5s 1;
+}
+
+.skill-per::before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -40px;
+  right: 0;
+  transform: translateX(50%);
+}
+
+.skill-per::after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: -20px;
+  right: 0;
+  transform: translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+
+@keyframes fillBars{
+  from{
+    width: 0;
+  }
+  to{
+    width: 100%;
+  }
+}
+
+.exp-section{
+  & .timeline{
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+
+  & .descr{
+    font-size: 14px
+  }
+
+  & .urls{
+    font-size: 14px;
+    margin-bottom: 5px;  
+  }
+
+  & .techs{
+    display: flex;
+    gap: 10px;
+    & li{
+      border-radius: 6px;
+      padding: 6px;
+      font-size: 14px;
+      margin-top: 5px;  
+    }
+  }
+
+}
