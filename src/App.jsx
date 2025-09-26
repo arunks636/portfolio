@@ -26,7 +26,7 @@ function Preloader({ setLoading }) {
 
   return (
     <div className="fixed inset-0 flex flex-col items-center justify-center bg-black text-white z-[9999] font-display">
-      <p className="text-9xl">{progress}%</p>
+      <p className="lg:text-9xl text-5xl">{progress}%</p>
       <div className="w-full h-2 bg-gray-700 overflow-hidden fixed bottom-0 left-0">
         <div
           className="h-full bg-theme-yellow transition-all duration-300"

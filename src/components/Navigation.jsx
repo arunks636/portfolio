@@ -15,10 +15,10 @@ function Navigation({ setCursorVariant, darkMode, setDarkMode }) {
       {!isDesktop && (
         <>
           <button
-            className={`fixed right-[20px] top-[20px] z-12 text-3xl cursor-pointer text-emerald-400`}
+            className={`fixed right-[20px] top-[20px] z-12 text-3xl cursor-pointer ${isOpen ? 'text-black' : darkMode ? 'text-white' : 'text-black'}`}
             onClick={() => setIsOpen((prev) => !prev)}
           >
-            {isOpen ? <IoMdClose /> : <RxHamburgerMenu />}
+            {isOpen ? <IoMdClose/> : <RxHamburgerMenu/>}
           </button>
 
           {isOpen && (
@@ -112,11 +112,11 @@ function Navigation({ setCursorVariant, darkMode, setDarkMode }) {
           >
             {["Home", "About", "Experiences", "Technologies", "Contact"].map(
               (item, key) => (
-                <li key={key} className="my-4 uppercase font-display">
+                <li key={key} className="my-2 uppercase font-display">
                   <a
                     className="relative inline-block dark:text-white text-dark
     pb-1
-    text-lg font-medium 
+    text-[16px] font-normal
     after:content-[''] after:absolute after:bottom-0 after:right-0 
     after:h-[2px] after:w-0 dark:after:bg-theme-yellow after:bg-emerald-400
     after:transition-all after:duration-300 after:ease-out

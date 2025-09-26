@@ -7,7 +7,7 @@ function Home({ setCursorVariant, darkMode, setDarkMode }) {
   return (
     <div id="homeSection" className="w-full m-auto font-display dark:text-offwhite text-base relative selection:bg-violet-500 dark:bg-black bg-white isolate overflow-hidden">
 
-      <div className="wrapper relative h-screen flex items-center justify-center overflow-hidden">
+      <div className="wrapper relative md:h-screen md:py-0 pt-[100px] pb-[50px] flex items-center justify-center overflow-hidden">
         {/* 🔹 Background Scrolling Text */}
         <div
           className="absolute inset-0 flex flex-col justify-center opacity-4 pointer-events-none rotate-[-20deg]"

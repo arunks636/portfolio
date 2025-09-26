@@ -4,7 +4,7 @@ import data from '../data/data';
 function About() {
   return (
     <>
-      <div className="w-full max-w-6/10 mx-auto block 2xl:flex dark:text-white text-dark py-15 font-display selection:bg-yellow-300"  id="aboutSection">
+      <div className="w-full md:max-w-6/10 max-w-8/10 mx-auto block 2xl:flex dark:text-white text-dark py-15 font-display selection:bg-yellow-300"  id="aboutSection">
         <div className="w-[500px] max-w-full">
           <h2 className="font-bold text-4xl">{data.name}</h2>
           <h4 className="font-medium text-2xl">{data.role}</h4>
@@ -20,7 +20,7 @@ function About() {
         </div>
       </div>
 
-      <div className="w-full max-w-6/10 mx-auto flex dark:text-white text-dark py-15 font-display selection:bg-yellow-300" id="experiencesSection">
+      <div className="w-full md:max-w-6/10 max-w-8/10 mx-auto flex dark:text-white text-dark py-15 font-display selection:bg-yellow-300" id="experiencesSection">
         <div className="exp-section">
           <h2 className="font-bold text-4xl mb-4">Experience</h2>
             <div className='lg:inline-grid block gap-5 grid-cols-[auto_auto]'>
@@ -51,7 +51,7 @@ function About() {
         </div>
       </div>
 
-      <div className="w-full max-w-6/10 mx-auto flex dark:text-white text-dark py-15 font-display selection:bg-yellow-300" id="technologiesSection">
+      <div className="w-full md:max-w-6/10 max-w-8/10 mx-auto flex dark:text-white text-dark py-15 font-display selection:bg-yellow-300" id="technologiesSection">
         <div className="technologies-section w-[100%]">
           <h2 className="font-bold text-4xl">Technologies</h2>
 
