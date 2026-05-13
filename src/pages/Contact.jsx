@@ -10,7 +10,7 @@ function Contact({ setCursorVariant }) {
           Get in touch
         </span>
         <h1 className="lg:text-5xl text-[25px] font-display z-1 relative">
-          Say Hi -{" "}
+          Say Hiiii -{" "}
           <a href="mailto:aruntvm636@gmail.com" className="underline">
             aruntvm636@gmail.com
           </a>
