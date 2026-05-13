@@ -8,5 +8,5 @@ export default defineConfig({
   build: {
     outDir: 'dist', // default is 'dist'
   },
-  base: "https://arunks636.github.io/portfolio/"
+  base: process.env.VITE_BASE_PATH || "/portfolio"
 })
