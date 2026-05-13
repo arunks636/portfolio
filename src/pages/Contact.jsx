@@ -11,8 +11,8 @@ function Contact({ setCursorVariant }) {
         </span>
         <h1 className="lg:text-5xl text-[25px] font-display z-1 relative">
           Say Hi -{" "}
-          <a href="mailto:caspers3d@gmail.com" className="underline">
-            caspers3d@gmail.com
+          <a href="mailto:aruntvm636@gmail.com" className="underline">
+            aruntvm636@gmail.com
           </a>
         </h1>
         <p className="font-display lg:text-2xl text-[13px] pt-4 z-1 relative">Social:</p>
